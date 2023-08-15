@@ -1,5 +1,12 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .main {
   display: flex;
+  max-width: 1100px;
 }
 
 .main > div {
@@ -10,15 +17,14 @@
   justify-content: center;
 }
 
-
-
 .header {
   width: 30%;
+  min-height: 20vh;
   background-color: green;
 }
 
 .main-container {
-  min-height: 50vh;
+  min-height: 100vh;
   background-color: aliceblue;
   max-width: 70%;
 }
@@ -32,9 +38,18 @@
 
 .main-container .text-area{
   min-height: 20vh;
+
+}
+.footer{
+  position: fixed;
+  bottom: 5px;
+  background-color: lightgrey;
 }
 
-.footer{
-  
-  background-color: lightgrey
+@media screen and (max-width: 600px) {
+  .main {flex-direction: column;}
+  .header {width: 100%;}
+  .main-container{ max-width: 100%;}
+  .footer{position: static;}
+
 }
