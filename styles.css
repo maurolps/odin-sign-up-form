@@ -8,16 +8,16 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: var(--max-width);
+  background-color: black;
 }
 .main {
-  background-color: black;
   display: flex;
   max-width: 1100px;
   width: 100%;
+  background-color: #eeeeee;
 }
 
 .main > div {
-  color: blue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,19 +27,22 @@ body {
 .header {
   width: 30%;
   min-height: 20vh;
-  background-color: green;
+  /* background: 
+    url(logo.jpg)
+    no-repeat
+    top center / cover; */
 }
 
 .main-container {
   min-height: 100vh;
-  background-color: aliceblue;
+  background-color: #eeeeee;
   max-width: 70%;
 }
 
 .main-container .form-area{
   min-height: 40vh;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 
 }
 
@@ -50,11 +53,10 @@ body {
 .footer{
   position: fixed;
   bottom: 5px;
-  background-color: lightgrey;
   align-self: flex-start;
+  text-align: center;
   width: 30%;
   max-width: calc(var(--max-width)*0.3);
-  
 }
 
 @media screen and (max-width: 600px) {
