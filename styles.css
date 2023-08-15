@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+}
+
+.main > div {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.header {
+  width: 30%;
+  background-color: green;
+}
+
+.main-container {
+  min-height: 50vh;
+  background-color: aliceblue;
+  max-width: 70%;
+}
+
+.main-container .form-area{
+  min-height: 40vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.main-container .text-area{
+  min-height: 20vh;
+}
+
+.footer{
+  
+  background-color: lightgrey
+}
