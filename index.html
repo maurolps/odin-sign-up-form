@@ -25,34 +25,34 @@
           <div class="text"><b>Let's do this!</b></div>
           <div class="form-container2">
             <div class="column1">
-              <form action="example.com/path">
+              <form action="#" method="get" id="form">
                 <div>
-                  <label for="first_name">FIRST NAME</label>
-                  <input type="text" id="first_name" name="first_name" >
+                  <label for="first_name">*FIRST NAME</label>
+                  <input type="text" id="first_name" name="first_name"  placeholder=" " required>
                 </div>
                 <div>
-                  <label for="user_email">EMAIL</label>
-                  <input type="email" name="user_email" id="user_email">
+                  <label for="user_email">*EMAIL</label>
+                  <input type="email" name="user_email" id="user_email"  placeholder=" " required>
                 </div>
                 <div>
-                  <label for="user_password">PASSWORD</label>
-                  <input type="password" id="user_password" name="password">
+                  <label for="user_password">*PASSWORD</label>
+                  <input type="password" id="user_password" name="password"  placeholder=" " required>
                 </div>
               </form>
             </div>
             <div class="column2">
-              <form action="example.com/path">
+              <form action="#">
                 <div>
                   <label for="last_name">LAST NAME</label>
-                  <input type="text" id="last_name" name="last_name" >
+                  <input type="text" id="last_name" name="last_name"  placeholder=" ">
                 </div>
                 <div>
                   <label for="user_phone">PHONE NUMBER</label>
-                  <input type="tel" name="user_phone" id="user_phone">
+                  <input type="tel" name="user_phone" id="user_phone"  placeholder=" ">
                 </div>
                 <div>
-                  <label for="user_password">CONFIRM PASSWORD</label>
-                  <input type="password" name="user_password2" id="user_password2">
+                  <label for="user_password">*CONFIRM PASSWORD</label>
+                  <input type="password" name="user_password2" id="user_password2" placeholder=" " required>
                 </div>
               </form>
             </div>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="bottom-container">
-        <button>Create Account</button>
+        <button type="submit" form="form">Create Account</button>
         <div class="signin-text">Already have an account? <a href="#">Sign In</a></div>
       </div>
     </div>
