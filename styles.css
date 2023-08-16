@@ -37,12 +37,13 @@ body {
 #img-header {
   position: relative;
   top: 10vh;
+  width: 30vw;
+  max-width: 500px;
 }
 
 #img-logo {
-  width: 40px;
-  height: 40px;
-  filter: drop-shadow(1px 1px rgb(48, 236, 196));
+  width: 50px;
+  height: 50px;
 }
 
 .main-container {
@@ -62,12 +63,18 @@ body {
 }
 
 button {
-  background-color: #1b9c86;
-  padding: 5px 20px;
+  background-color: #f1c50e;
+  padding: 10px 30px;
   border-style: none;
   border-radius: 5px;
-  color: white;
+  color: #ffffff;
   margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #806601;
 }
 
 input {
@@ -101,6 +108,8 @@ label, input {
 label {
   font-size: 0.7rem;
   font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
 }
 
 input {
@@ -109,6 +118,7 @@ input {
 
 .main-container {
   gap: 20px;
+  background-color: #fafafa;
 }
 
 .logo-text {
@@ -142,13 +152,27 @@ input {
  align-items: center;
 }
 
+.signin-text {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .footer{
   position: fixed;
   bottom: 5px;
   align-self: flex-start;
+  font-size: 0.8rem;
   text-align: center;
   width: 30%;
   max-width: calc(var(--max-width)*0.3);
+  color: #575757;
 }
 
 @media screen and (max-width: 600px) {
