@@ -116,6 +116,18 @@ input {
   height: 20px;
 }
 
+input:invalid {
+  border-color: #e49191;
+}
+
+input:valid {
+  border-color: #8cccc1;
+}
+
+input:placeholder-shown{
+  border-color: rgb(226, 226, 226);
+}
+
 .main-container {
   gap: 20px;
   background-color: #fafafa;
